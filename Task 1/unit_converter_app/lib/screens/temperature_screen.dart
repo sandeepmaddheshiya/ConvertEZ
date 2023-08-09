@@ -211,49 +211,53 @@ class _TemperatureScreenState extends State<TemperatureScreen> {
         _result = double.parse(_textEditingController0.text);
       } else if (_textEditingController1.text == optionsTexts[0] &&
           _textEditingController2.text == optionsTexts[1]) {
-        _result = double.parse(_textEditingController0.text) * 33.8;
+        _result = double.parse(_textEditingController0.text) * (9 / 5) + 32;
       } else if (_textEditingController1.text == optionsTexts[0] &&
           _textEditingController2.text == optionsTexts[2]) {
-        _result = double.parse(_textEditingController0.text) * 274.15;
+        _result = double.parse(_textEditingController0.text) + 273.15;
       } else if (_textEditingController1.text == optionsTexts[0] &&
           _textEditingController2.text == optionsTexts[3]) {
-        _result = double.parse(_textEditingController0.text) * 493.47;
+        _result =
+            (double.parse(_textEditingController0.text) + 273.15) * (9 / 5);
       } //2nd
       else if (_textEditingController1.text == optionsTexts[1] &&
           _textEditingController2.text == optionsTexts[0]) {
-        _result = double.parse(_textEditingController0.text) * -17.2222;
+        _result = (double.parse(_textEditingController0.text) - 32) * (5 / 9);
       } else if (_textEditingController1.text == optionsTexts[1] &&
           _textEditingController2.text == optionsTexts[1]) {
-        _result = double.parse(_textEditingController0.text) * 1;
+        _result = double.parse(_textEditingController0.text);
       } else if (_textEditingController1.text == optionsTexts[1] &&
           _textEditingController2.text == optionsTexts[2]) {
-        _result = double.parse(_textEditingController0.text) * 255.9278;
+        _result = (double.parse(_textEditingController0.text) - 32) * (5 / 9) +
+            273.15;
       } else if (_textEditingController1.text == optionsTexts[1] &&
           _textEditingController2.text == optionsTexts[3]) {
-        _result = double.parse(_textEditingController0.text) * 460.67;
+        _result = double.parse(_textEditingController0.text) + 459.67;
       } //3rd
       else if (_textEditingController1.text == optionsTexts[2] &&
           _textEditingController2.text == optionsTexts[0]) {
-        _result = double.parse(_textEditingController0.text) * -272.15;
+        _result = double.parse(_textEditingController0.text) * -273.15;
       } else if (_textEditingController1.text == optionsTexts[2] &&
           _textEditingController2.text == optionsTexts[1]) {
-        _result = double.parse(_textEditingController0.text) * -457.87;
+        _result =
+            (double.parse(_textEditingController0.text) * -273.15) * (9 / 5) +
+                32;
       } else if (_textEditingController1.text == optionsTexts[2] &&
           _textEditingController2.text == optionsTexts[2]) {
-        _result = double.parse(_textEditingController0.text) * 1;
+        _result = double.parse(_textEditingController0.text);
       } else if (_textEditingController1.text == optionsTexts[2] &&
           _textEditingController2.text == optionsTexts[3]) {
         _result = double.parse(_textEditingController0.text) * 1.8;
       } //4th
       else if (_textEditingController1.text == optionsTexts[3] &&
           _textEditingController2.text == optionsTexts[0]) {
-        _result = double.parse(_textEditingController0.text) * -272.5944;
+        _result = (double.parse(_textEditingController0.text) - 491.67) / 1.8;
       } else if (_textEditingController1.text == optionsTexts[3] &&
           _textEditingController2.text == optionsTexts[1]) {
-        _result = double.parse(_textEditingController0.text) * -458.67;
+        _result = double.parse(_textEditingController0.text) - 459.67;
       } else if (_textEditingController1.text == optionsTexts[3] &&
           _textEditingController2.text == optionsTexts[2]) {
-        _result = double.parse(_textEditingController0.text) * 0.5556;
+        _result = double.parse(_textEditingController0.text) / 1.8;
       } else if (_textEditingController1.text == optionsTexts[3] &&
           _textEditingController2.text == optionsTexts[3]) {
         _result = double.parse(_textEditingController0.text) * 1;
